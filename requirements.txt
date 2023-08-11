@@ -1,0 +1,25 @@
+1) Webpack-сборщик приложения
+    Babel
+    Scss
+    Eslint
+    2 Mods
+      -Dev
+        Dev server,
+        SourceMaps, исходные карты
+         Eslint, стиль кода форматирование
+         Not Minifiend,
+         JS & CSS
+      -Prod
+        Minified Code
+2) Git
+
+    Production
+    1.0.0
+    0 ----------
+    Development
+    1.0.2
+    1 ----- + --- pul recvest  совмещение веток
+    2 ---------
+Инициализация:
+    git init
+    git add .
