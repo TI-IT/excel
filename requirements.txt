@@ -1,3 +1,4 @@
+*******************************************
 1) Webpack-сборщик приложения
     Babel
     Scss
@@ -11,6 +12,17 @@
          JS & CSS
       -Prod
         Minified Code
+    npm init
+
+plugins
+    npm install --save-dev html-webpack-plugin
+    npm install copy-webpack-plugin --save-dev
+    npm install --save-dev clean-webpack-plugin
+    npm install --save-dev mini-css-extract-plugin
+loader
+    npm install sass-loader sass webpack --save-dev
+    npm install css-loader --save-dev
+**********************************************
 2) Git
 
     Production
@@ -26,3 +38,11 @@
     git commit -m "initial"
     git remote add origin https://github.com/TI-IT/exel.git
     git push -u origin main
+
+Добавить новую ветку:
+    git checkout -b "webpack"
+    git add .
+    git commit -m "create webpack config"
+    git push -u origin webpack
+
+
