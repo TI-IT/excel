@@ -9,7 +9,9 @@
     "semi": "off",
     "arrow-parens": "off",
     "linebreak-style": ["error", "unix"],
-    "require-jsdoc": "off"
+    "require-jsdoc": "off",
+    "operator-linebreak": "off",
+    "no-trailing-spaces": "off"
   },
   "extends": ["eslint:recommended", "google"]
 }
