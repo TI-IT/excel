@@ -8,7 +8,7 @@ export class DomListener {
     this.$root = $root
     this.listeners = listeners
   }
-  initDomListeners() {
+  initDOMListeners() {
     this.listeners.forEach(listener => {
       const method = getMethodName(listener)
       if (!this[method]) {
@@ -17,10 +17,15 @@ export class DomListener {
             `Method ${method} is not implemented in ${name} Component`
         )
       }
-      this.$root.on(listener, this[method].bind(this))
+      this[method] = this[method].bind(this)
+      this.$root.on(listener, this[method])
     })
   }
-  removeDomListeners() {
+  removeDOMListeners() {
+    this.listeners.forEach(listener => {
+      const method = getMethodName(listener)
+      this.$root.off(listener, this[method])
+    })
   }
 }
 
